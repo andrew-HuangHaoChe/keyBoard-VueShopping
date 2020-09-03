@@ -1,0 +1,68 @@
+
+.procontainer{
+    min-height: calc(100vh - 240px);
+}
+.protitle{
+   animation: slideIn 1s ease;
+   text-shadow: $rattan 0.1em 0.1em 0.2em; 
+}
+@keyframes slideIn{
+        0%{
+            transform: translateX(120px);
+        }
+        100%{
+            transform: translateX(0);
+        }
+}
+.subtitle{
+    animation: slideUp 1s ease;
+}
+@keyframes slideUp{
+    0%{
+        transform: translateY(120px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.promotionimg{
+    width: 700px;
+    border-radius: $fontSize;
+    background-image: url('https://images.unsplash.com/photo-1480732149909-d4e710a0f81c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promoLine{
+    max-width: 720px;
+}
+.discode{
+    width: 180px;
+    background: linear-gradient(-45deg, $danger, $rattan, $greyish,$midnightGreen);
+    background-size: 400% 400%;
+    border-radius: $fontSize;
+    position: relative;
+    animation: change 7s ease-in-out infinite;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.distext{
+    font-size:$fontSize*2.5;
+    text-transform: uppercase;
+    letter-spacing: $fontSize/7;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 1px $midnightGreen;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}

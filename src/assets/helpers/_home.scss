@@ -1,0 +1,140 @@
+$fontSize:14px;
+$fontSize-l:16px;
+html,body{
+    font-family: '微軟正黑體', 'Microsoft JhengHei', 'Segoe UI Semibold', 'Segoe UI', 'Lucida Grande'!important;
+    height: 100%;
+    margin:0;
+    max-width: 100%;
+}
+.wrapper{
+    min-height: calc(100vh - 120px);
+}
+.container{
+    padding-bottom:100px;
+}
+.routerActive{
+    color:$yellow;
+}
+.logoImg{
+    height: 60px;
+}
+.icon{
+    font-size: $fontSize;
+}
+.homeFont{
+    font-size: $fontSize;
+}
+
+.hd{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hdimg{
+    max-height: 600px;
+}
+.box-shadow{
+    transition: box-shadow .3s;
+}
+.box-shadow:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .24);
+}
+.card-img{
+    height: 180px;
+}
+.option-font{
+    color:$midnightGreen;
+}
+.active{
+    color: $white;
+}
+.priceLine{
+    text-decoration: line-through;
+}
+// .keyboardCard{
+//     animation: slideup 1.2s ease;
+// }
+// @keyframes slideup{
+//     0%{
+//         transform: translateY(250px);
+//     }
+//     100%{
+//         transform: translateY(0);
+//     }
+// }
+.keyboardCard{
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.dropup .dropdown-toggle::after {
+    display: none !important;
+}
+.btn-style{
+    position: relative;
+    border-radius: 99em !important;
+    width: 60px;
+    height: 60px;
+    background-color: $white !important;
+}
+.quantity{
+    position: absolute;
+    height: $fontSize*1.5;
+    width: $fontSize*1.5;
+    background-color: $midnightGreen;
+    color:$white;
+    right:-1px;
+    top:-1px;
+    border-radius: 99em;
+    .qtext{
+        height: $fontSize*1.5;
+        width: $fontSize*1.5;
+    }
+}
+.fa-shopping-basket{
+    color:$midnightGreen;
+    font-size: $fontSize *1.5;
+}
+.cartstyle{
+    min-width:370px;
+    max-height:30vh;
+    overflow-y: auto;
+}
+.shopList{
+    margin-left:-$fontSize-l * 5;
+}
+.orderCart{
+    min-width:420px;
+}
+.orderCoupon{
+    min-width:420px;
+    height: 35px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+    transition: box-shadow .3s;
+}
+.incoupon{
+    height: 35px !important;
+}
+.orderCoupon:hover{
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, .20);
+}
+.cartIcon{
+    position:fixed !important;
+    cursor: pointer;
+    padding: 0;
+	margin: 0;
+	border: 0;
+    left:1rem;
+    bottom:1rem;
+    margin-left: 20px;
+    display: none;
+}
+.cartIcon::before,.cartIcon::after{
+    position: absolute;
+	content: "";
+}
